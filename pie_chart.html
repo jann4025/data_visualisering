@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie chart</title>
+    <style>
+        #container {
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        #piechart {
+            border-radius: 50%;
+            transform: rotate(-90deg);
+            background-color: #333;
+        }
+
+        .pie1 {
+            stroke: #ca1;
+            fill: none;
+            stroke-width: 100;
+            stroke-dasharray: 30 calc(100*22/7);
+        }
+
+        .pie2 {
+            stroke: #f00;
+            fill: none;
+            stroke-width: 100;
+            stroke-dasharray: 60 calc(100*22/7);
+            stroke-dashoffset: -30;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <svg id="piechart" viewbox="0 0 100 100">
+            <circle class="pie1" r="50" cx="50" cy="50" />
+            <circle class="pie2" 2 r="50" cx="50" cy="50" />
+
+
+        </svg>
+
+    </div>
+
+
+
+
+    <script>
+
+    </script>
+</body>
+</html>
